@@ -58,7 +58,7 @@ input[type="submit"]{
     margin: 20px;
     float: left;
     width: 25%;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     padding-right: 200px;
     box-sizing: border-box;
 }
@@ -70,6 +70,7 @@ input[type="submit"]{
 
 
 iframe{
+    margin: 20px;
     width: 16vw;
     height: 10vw;
     display: block;
