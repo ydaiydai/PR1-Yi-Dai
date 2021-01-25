@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        <title>Page 5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel = "stylesheet" href= "style.css" />
+        <script defer src="emailCheck.js"></script>
+	</head>
+
+	<body>
+
+		<!-- Nav -->
+		<nav>
+			<ul>
+			
+			<li><a href = "index.html">Text</a></li>
+			<li><a href = "page2.html">Image</a></li>
+			<li><a href = "page3.html">Video</a></li>
+            <li><a href = "page4.html">Table</a></li>
+            <li class="active"><a href = "page5.html">Email</a></li>
+
+			</ul>
+		</nav>
+
+        <br>
+
+        <!-- Table -->
+        <div class = "email-container">
+            <h1 class = "label">Email validation</h1>
+
+            <form class = "email-form" method = "post" name = "form" onsubmit="return validation()">
+                <input type = "text" name = "email">
+                
+
+                <button type = "submit">Submit</button>
+
+                <div id = "email-suc"></div>
+            </form>
+        </div>
+            
+
+	</body>
+</html>
