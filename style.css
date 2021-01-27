@@ -246,8 +246,8 @@ figcaption{
 }
 
 .box .imageBox{
-    width: 50%;
-    flex: 0 0 50%;
+    width: 30%;
+    flex: 0 0 30%;
 }
 
 .box .content{
@@ -257,12 +257,12 @@ figcaption{
 .box .content h2{
     margin: 0;
     padding-left: 0;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .box .content p{
     margin: 0;
     padding: 10px 0 0;
     text-align: justify;
-    font-size: 24px;
+    font-size: 20px;
 }
