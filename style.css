@@ -214,8 +214,8 @@ img {
 #btn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 100px;
+    right: 100px;
     z-index: 90;
     font-size: 30px;
     border: none;
