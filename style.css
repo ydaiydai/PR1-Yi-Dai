@@ -1,11 +1,13 @@
 nav {
+    /*display: inline-flex;*/
     background-color: #493a3a;
     width: 100%;
     overflow: auto;
+    /*position: relative;*/
 }
 
 nav a{
-    width:150px;
+    /*width:20%;*/
     display: block;
     color: white;
     text-align: center;
@@ -13,6 +15,11 @@ nav a{
     text-decoration: none;
     background-color: #493a3a;
     font-size: 25px;
+
+    
+    top: 50%;
+    left: 50%;
+    
 }
 
 ul { 
@@ -29,9 +36,21 @@ li a:hover {
     background-color: green;
 }
 
+nav ul li.active a{
+    color: white;
+    background-color: green;
+}
+
 form{
-    margin: 20px;
+    
     font-size: 30px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
 }
 
 input[type="text"]{
@@ -46,9 +65,9 @@ input[type="radio"]{
 }
 
 input[type="submit"]{
-    height:30px;
+    height: 40px;
     width: 80px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .image-container{
@@ -71,26 +90,23 @@ input[type="submit"]{
 }
 
 
-iframe{
-    margin: 20px;
-    width: 16vw;
-    height: 10vw;
-    display: block;
-    float: left;
-    margin-top: 50px;
-    margin-right: 200px;
-}
+
 
 
 table{
     border-collapse: collapse;
     width: 100%;
+
+    
 }
 
 th, td{
     border: 1px solid black;
-    text-align: left;
+    text-align: center;
+    vertical-align: middle;
     padding: 10px;
+
+    
 }
 
 th{
@@ -101,3 +117,120 @@ td{
     font-size: 30px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.video {
+    box-sizing: border-box;
+    
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.item {
+    flex: 20%;
+    box-sizing: border-box;
+    
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.vids {
+    flex: 20%;
+    box-sizing: border-box;
+    
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+}
+.video iframe {
+    display: block;
+    width: 100%;
+    min-height: 50%;
+    height: auto;
+    margin: auto;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.83);
+    display: none;
+}
+
+#overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#overlay img {
+    width: 40%;
+    height: auto;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#overlay video {
+    width: 40%;
+    height: auto;
+    max-height: 80%;
+    padding: 4px;
+}
+
+.video-player {
+    z-index: 1000;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 90;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: lightcoral;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#btn:hover{
+    background-color: lightskyblue;
+}
+
+figcaption{
+    text-align: center;
+}
