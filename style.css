@@ -243,6 +243,7 @@ figcaption{
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    max-block-size: 200px;
 }
 
 .box .imageBox{
@@ -258,6 +259,7 @@ figcaption{
     margin: 0;
     padding-left: 0;
     font-size: 32px;
+    max-lines: 10;
 }
 
 .box .content p{
@@ -265,4 +267,5 @@ figcaption{
     padding: 10px 0 0;
     text-align: justify;
     font-size: 20px;
+    max-lines: 10;
 }
