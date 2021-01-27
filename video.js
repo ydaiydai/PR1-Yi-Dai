@@ -1,6 +1,6 @@
-const lightbox = document.createElement('div')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox)
+const overlay = document.createElement('div')
+overlay.id = 'overlay'
+document.body.appendChild(overlay)
 
 var videoPlayer = document.getElementById("videoPlayer")
 var myVideo = document.getElementById("myVideo")
@@ -8,21 +8,20 @@ var myVideo = document.getElementById("myVideo")
 function playVideo(file){
     myVideo.src = file;
     videoPlayer.style.display = "block"
-    lightbox.classList.add('active')
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild)
+    overlay.classList.add('active')
+    while (overlay.firstChild) {
+        overlay.removeChild(overlay.firstChild)
     }
-    lightbox.appendChild(videoPlayer)
+    overlay.appendChild(videoPlayer)
 }
 
 function stopVideo(){
-  videoPlayer.style.display = "none"
+    videoPlayer.style.display = "none"
 }
 
-lightbox.addEventListener('click', e => {
-  if (e.target !== e.currentTarget) return
-    lightbox.classList.remove('active')
-  
+overlay.addEventListener('click', e => {
+    if (e.target !== e.currentTarget) return
+    overlay.classList.remove('active')
 })
 
 

@@ -27,15 +27,19 @@
 
         <!-- Table -->
         <div class = "email-container">
-            <h1 class = "label">Email validation</h1>
+            <h1 class = "label" style = "text-align: center;">Email validation</h1>
 
-            <form class = "email-form" method = "post" name = "form" onsubmit="return validation()">
-                <input type = "text" name = "email">
+            <form class = "email-form" method = "post" name = "form" style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" onsubmit="return validation()">
+
+                <label for = "instruction" style = "color: seagreen;">Please enter email below</label><br>
+
+            <br>
+
+                <input type = "text" name = "email" style = "height: 35px; width: 300px; font-size: 22px">
                 
+                <input type = "submit"></input>
 
-                <button type = "submit">Submit</button>
-
-                <div id = "email-suc"></div>
+                <div id = "email-suc" style = "font-family: Arial, Helvetica, sans-serif;"></div>
             </form>
         </div>
             
